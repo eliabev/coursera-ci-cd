@@ -1,3 +1,3 @@
 # Display the output
 
-print('output')
+print('the output')
