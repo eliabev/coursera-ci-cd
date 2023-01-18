@@ -98,3 +98,15 @@ jobs:
         with:
             version: "v0.1.13"
 ```
+
+## Diferenças CI-CD
+
+Continuous Integration, continuamente integra seu código com a main/master/trunk, para ter certeza de que não haverá nenhum problema ao fazer o merge. Continuous Delivery é uma série de práticas desenvolvidas para assegurar que o código possa ser disponibilizado/implantado na produção com segurança, entregando o código num ambiente parecido com o de produção. Delivery, diferente do Deployment, entrega o código para um ambiente parecido com o de produção. Isso é automatizado. Segundo Martin Fowler, Continuous Delivery é uma disciplina que permite que o software seja entregue à produção a qualquer momento.
+
+**Princípios chaves**:
+
+* Qualidade Embutida: Asegurar a qualidade embutida em cada passo do processo. Continuamente revisar o código.
+* Trabalhar em Pequenas Porções: Criar histórias curtas, para dividir o trabalho. Continuamente integrar pequenas mudanças.
+* Pessoas para RESOLVER Problemas: Pessoas são úteis para resolver problemas, mas não para realizar tarefas repetitivas. Com TDD, você pode manualmente fazer o pull e testar o código. Deixe que os computadores façam essas tarefas repetitivas.
+* Busque Melhoria Contínua: CD permite que trabalhemos também na melhoria contínua. Podemos saber onde estamos e quando as coisas quebram.
+* TODOS São Responsáveis: Se algo quebra, não podemos buscar um culpado, mas entender como melhorar o processo para isso nunca mais acontecer.
