@@ -110,3 +110,16 @@ Continuous Integration, continuamente integra seu código com a main/master/trun
 * Pessoas para RESOLVER Problemas: Pessoas são úteis para resolver problemas, mas não para realizar tarefas repetitivas. Com TDD, você pode manualmente fazer o pull e testar o código. Deixe que os computadores façam essas tarefas repetitivas.
 * Busque Melhoria Contínua: CD permite que trabalhemos também na melhoria contínua. Podemos saber onde estamos e quando as coisas quebram.
 * TODOS São Responsáveis: Se algo quebra, não podemos buscar um culpado, mas entender como melhorar o processo para isso nunca mais acontecer.
+
+Jenkins não é uma boa ferramenta para o Continuous Delivery. Precisa de muita configuração e manutenção, além de não permitir um olhar claro sobre as pipelines rodando.
+Spinnaker é usado pela Netflix. Permite gerenciar as pipelines e facilira os rollbacks.
+GitLab permite tanto o CI quanto o CD, que facilita muito os deploys.
+
+**Tasks Fundamentais na Pipeline do CD**:
+
+* Security Scanning;
+* Vulnerability Scanning: checa por dependências vulneráveis, já que elas costumam mudar com muita frequência;
+* Secret Scanning: checa se alguma credencial foi acidentalmente exposta no código;
+* Static Application Security Testing: procura por blocos de código que podem permitir SQL Injection, XSS, etc;
+* Dynamic Application Security Testing: checa a aplicação rodando para verificar se existem locais de fragilidade;
+* Deployment;
